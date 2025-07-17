@@ -1,0 +1,61 @@
+Windows Patching !!
+
+Usually MS Security patches will be released by MS everymonth second Tuesday !!
+
+post MS released, we have to plan patching for both Prod and non env
+
+Always Non Prod should first and Prod
+
+3rd week Non prod
+4th weekf Prod
+
+During off business patching we do for 8hours of downtime window
+
+and then 
+
+Patching tools and scripts 
+
+Method 1
+
+for patches pushing from MS  WSUS 
+
+apply and restarting - powershell script
+
+Method 2
+
+Azure update management for patching
+
+with a help of automation account 
+
+we can schedule the servers and which date patch needs to install and reboot
+
+--------------------------------------------------------------------------------
+
+Monitoring !!
+
+Splunk Monitoring - we have configured thresold for CPU , memory, Disk , VM.
+
+blackout , Maintanence mode 
+
+Azure monitoring tools - metrics and Insights  (LAW - will store the logs)
+
+------------------------------------------------------------------------------
+Load Balancer and Application gateway
+
+routing the traffic based on the load, to backend servers.
+
+OSI layers 4 - Transport layer TCP and UDP based protocol
+
+Health probe - every fewmins - Health prbe will send heartbeat signal - whether backend servers are health or not
+
+Session Persistance - None , Client IP , and thrid Client IP with Protocol
+
+---------------------------------------------------------------------------
+
+Application gateway 
+
+its act as Layer 7 - web traffic 
+
+---------------------------------------------------------------------------
+
+ 
